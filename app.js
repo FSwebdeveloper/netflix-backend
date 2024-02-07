@@ -45,6 +45,11 @@ res.json(data);
 
 
 
-app.listen(process.env.PORT || netflix-backend-dgl1.onrender.com, function(){
-  console.log("Server started on port on");   
- });
+let port = process.env.PORT;
+if (port == null || port == "https://netflix-backend-dgl1.onrender.com") {
+  port = 8080;
+}
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
