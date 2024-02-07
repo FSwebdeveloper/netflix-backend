@@ -46,7 +46,7 @@ res.json(data);
 
 
 let port = process.env.PORT;
-if (port == null || port == "") {
+if (port == null || port == "https://sore-puce-fox-kit.cyclic.app") {
   port = 8080;
 }
 app.listen(port, () => {
