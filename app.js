@@ -28,9 +28,9 @@ const app = express();
 
 app.use(bodyParser.json());
 
-// app.get("/", (req, res) =>{
-//     res.send("<h1>Wellcome to Backend</h1>");
-// })
+app.get("/", (req, res) =>{
+    res.send("<h1>Wellcome to Backend</h1>");
+})
 
 app.post("/login", async(req,res)=>{
 
@@ -46,7 +46,7 @@ res.json(data);
 
 
 let port = process.env.PORT;
-if (port == null || port == "https://sore-puce-fox-kit.cyclic.app") {
+if (port == null || port == "https://bespoke-figolla-a74c50.netlify.app") {
   port = 8080;
 }
 app.listen(port, () => {
