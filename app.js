@@ -46,7 +46,7 @@ res.json(data);
 
 
 let port = process.env.PORT;
-if (port == null || port == "https://jade-long-nematode.cyclic.app") {
+if (port == null || port == "") {
   port = 8080;
 }
 app.listen(port, () => {
